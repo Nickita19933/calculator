@@ -85,7 +85,10 @@ function Admin() {
           <p>
              Отредактируйте калькулятор в формате JSON. Пример:
           </p>
-          <textarea id="json" value={JSON.stringify(exampleJson, null, 2)} />
+          <pre>
+            {JSON.stringify(exampleJson, null, 2)}
+          </pre>
+          <textarea id="json"/>
           <input id="login" type="text" placeholder="Введите логин от админа" />
           <input id="pass" type="password" placeholder="Введите пароль от админа" />
           <button id="create" onClick={() => AddCalc()}>Создать</button>
