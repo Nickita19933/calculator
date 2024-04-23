@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Main/>} />
         <Route path='/admin' element={<Admin/>} />
-        <Route path='/interfaceCalc/:id' element={<InterfaceCalc/>} />
+        <Route path='/InterfaceCalc/:id' element={<InterfaceCalc/>} />
       </Routes>
     </BrowserRouter>
   );
