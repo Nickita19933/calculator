@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./Item.css";
 import { useEffect, useState } from "react";
 
@@ -12,15 +13,13 @@ function Item({ id }) {
       .then((res) => res.json())
       .then((result) => {
         setCalc(result.data);
-
       });
   });
 
   return (
     <div className="Item">
-      <p>{calc.Calc}</p>
-      <a href={`/InterfaceCalc/${calc._id}`} className="btn">Расчитать</a>
-
+      <p>{calc.nameCalc}</p>
+      <Link to={`/interfaceCalc/${calc._id}`} className="btn">Перейти</Link>
     </div>
   );
 }

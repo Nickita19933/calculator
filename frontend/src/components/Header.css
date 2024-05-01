@@ -28,3 +28,18 @@
 
     color: #000000;
 }
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    flex-wrap: wrap;
+    max-width: 100%;
+    border-radius: 10px;
+    
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
